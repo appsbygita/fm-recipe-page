@@ -17,10 +17,14 @@
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   position: relative;
   font-family: "Outfit";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: var(--wenge-brown);
   background-color: var(--eggshell);
@@ -50,13 +54,13 @@ h2 {
 
 h1 {
   color: var(--dark-charcoal);
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 h2 {
   margin: 30px 0;
   color: var(--nutmeg);
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 p {
@@ -69,7 +73,7 @@ li {
 }
 
 li::marker {
-  font-size: 14px;
+  font-size: 0.8rem;
   color: var(--nutmeg);
   font-weight: 700;
 }
@@ -92,7 +96,7 @@ hr {
 
 .recipe-info strong {
   color: var(--dark-raspberry);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 .recipe-info li::marker {
@@ -154,13 +158,13 @@ footer {
     border-radius: 0;
   }
   h1 {
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 100%;
   }
   footer {
     position: relative;
     margin-top: 40px;
     max-width: 200px;
-    font-size: 12px;
+    font-size: 0.8rem;
   }
 }
