@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Outfit";
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--wenge-brown);
+  background-color: var(--eggshell);
+  padding: 120px 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 736px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: var(--white);
+  border-radius: 24px;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+h1 {
+  color: var(--dark-charcoal);
+  font-size: 40px;
+}
+
+h2 {
+  margin: 30px 0;
+  color: var(--nutmeg);
+  font-size: 30px;
+}
+
+p {
+  margin: 30px 0;
+}
+
+li {
+  margin-top: 16px;
+  padding-left: 20px;
+}
+
+li::marker {
+  font-size: 14px;
+  color: var(--nutmeg);
+  font-weight: 700;
+}
+
+ul,
+ol {
+  padding-inline-start: 18px;
+}
+
+hr {
+  margin-top: 30px;
+  opacity: 0.3;
+}
+
+.recipe-info {
+  padding: 28px;
+  background-color: var(--rose-white);
+  border-radius: 10px;
+}
+
+.recipe-info strong {
+  color: var(--dark-raspberry);
+  font-size: 20px;
+  font-weight: 600;
+}
+.recipe-info li::marker {
+  color: var(--dark-raspberry);
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  margin-top: -14px;
+}
+
+tr:not(:last-child) th,
+tr:not(:last-child) td {
+  border-bottom: 1px solid var(--light-grey);
+}
+th,
+td {
+  text-align: left;
+  padding: 14px 30px;
+}
+th {
+  font-weight: 400;
+  width: 45%;
+}
+td {
+  color: var(--nutmeg);
+  font-weight: 700;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translatex(-50%);
+  color: var(--dark-charcoal);
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--dark-raspberry);
+}
+
+@media screen and (max-width: 736px) {
+  body {
+    padding: 0;
+    background-color: var(--white);
+  }
+  .container {
+    padding: 32px;
+  }
+  figure {
+    width: 100vw;
+    margin-left: -32px;
+    margin-top: -32px;
+  }
+  figure img {
+    border-radius: 0;
+  }
+  h1 {
+    font-size: 32px;
+    line-height: 100%;
+  }
+  footer {
+    position: relative;
+    margin-top: 40px;
+    max-width: 200px;
+    font-size: 12px;
+  }
+}
